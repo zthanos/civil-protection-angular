@@ -1,0 +1,32 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Νέος κορωνοϊός Covid-19 </mat-card-title>
+        <mat-card-subtitle>Οδηγίες</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img mat-card-image src="/assets/eody/stayhome.png" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content>
+        <p>
+            Ο Εθνικός Οργανισμός Δημόσιας Υγείας (ΕΟΔΥ), παρακολουθεί από την αρχή τις εξελίξεις και βρίσκεται σε συνεχή
+            επικοινωνία τόσο με το Ευρωπαϊκό Κέντρο Πρόληψης και Ελέγχου Νοσημάτων (ECDC) όσο και τον Παγκόσμιο
+            Οργανισμό Υγείας (WHO). Ο ΕΟΔΥ παραμένει σε επαγρύπνηση σχετικά με ενδεχόμενα κρούσματα της νόσου σε
+            ταξιδιώτες ενώ έχει ήδη εκδώσει και επικαιροποιεί συστηματικά ενημερωτικό υλικό και εξειδικευμένες οδηγίες,
+            που μπορείτε να βρείτε στην ιστοσελίδα μας.
+        </p>
+        <mat-card-subtitle>
+            Οδηγίες για το κοινό
+        </mat-card-subtitle>
+    </mat-card-content>
+
+    <mat-accordion>
+        <mat-expansion-panel *ngFor="let item of data">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{ item.Title}}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+        </mat-expansion-panel>
+
+    </mat-accordion>
+
+</mat-card>

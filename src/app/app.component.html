@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="child red-child">
+    <mat-toolbar color="4f567e" class="header" fxFlex=25>
+      <span>Civil Protection </span>
+    </mat-toolbar>
+  </div>
+  <div class="child green-child">
+    <!-- <table mat-table [dataSource]="dataSource" matSort>
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+        <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="website">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Website </th>
+        <td mat-cell *matCellDef="let element"> {{element.website}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="col"></tr>
+      <tr mat-row *matRowDef="let row; columns: col;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[7, 14, 28]" showFirstLastButtons></mat-paginator> -->
+
+    <router-outlet></router-outlet>
+
+  </div>
+  <div class="child yellow-child">
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link [routerLink]="['/']">
+        <img class="menuIcon" src="./assets/menu/dashboard.png" alt="Home">
+      </a>
+      <a mat-tab-link [routerLink]="['/maps']"> <img class="menuIcon" src="./assets/menu/pinoint.png" alt="map">
+      </a>
+      <a mat-tab-link [routerLink]="['/eody']"> <img class="menuIcon" src="./assets/menu/pinoint.png" alt="eody">
+      </a>
+      <a mat-tab-link [routerLink]="['/tweets']"> <img class="menuIcon" src="./assets/menu/chat.png" alt="tweets">
+      </a>
+      <a mat-tab-link [routerLink]="['/tweets']"> <img class="menuIcon" src="./assets/menu/envelope.png" alt="Home">
+      </a>
+    </nav>
+  </div>
+</div>
+
+
+
+<!-- <mat-tab-group [backgroundColor]="'primary'" [color]="'accent'" headerPosition="below" 
+               dynamicHeight="false" flexLayout="row">
+                
+  <mat-tab label="Home"  fxFlex="90">
+    
+  
+  <mat-tab label="Near me" fxFlex="90"> Content 2 </mat-tab>
+  <mat-tab label="Emergeancy Calls" fxFlex="90"> Content 3 </mat-tab>
+  <mat-tab label="Emergeancy Calls" fxFlex="90"> Content 3 </mat-tab>
+</mat-tab-group> -->

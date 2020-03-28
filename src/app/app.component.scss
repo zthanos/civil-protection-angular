@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 100%;
+    margin: 0px ;
+    height: 100%;
+    
+}
+
+// .child {
+//     margin: 0.4em;
+//     border-radius: 1em;
+//     background-color: lightblue;
+// }
+
+// .red-child {
+// }
+.green-child {
+
+    height: 100%;
+    overflow: scroll;
+}
+.yellow-child {
+
+    height: 90px;
+}
+
+.mat-tab-nav-bar {
+    background-color:#cdcdcd;
+    height:90px
+}
+
+.mat-tab-link {
+    padding: 13px 24px;
+    height: 90px;
+}
+
+.mat-card-image {
+    margin-top: 0px;
+}
+
+.menuIcon{
+    height: 32px;
+}

@@ -1,0 +1,22 @@
+<map></map>
+<mat-card class="example-card">
+    <mat-card-header>
+        <img mat-card-avatar class="example-header-image" src="{{weatherico}}" alt="weather icon"/>
+        <!-- <div mat-card-avatar class="example-header-image" style="background-image: {{weatherico}})"></div> -->
+        <mat-card-title>{{citty}}</mat-card-title>
+        <mat-card-subtitle>{{sunrise}} {{sunset}}</mat-card-subtitle>
+      <!-- <button mat-raised-button color="accent" (click)="addToHomeScreen()">Add to home screen</button> -->
+
+    </mat-card-header>
+    <!-- <img mat-card-image src="{{item.OriginalTweet?.MediaUrls}}"  *ngIf="item.OriginalTweet?.MediaUrls != null" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content>
+        Θερμοκρασία : {{ degrees }} Αίσθηση : {{ feelsLike}}
+        <!-- <div *ngFor="let item of data.list">
+            <p>{{item.dt_txt}}</p>
+            <p *ngFor="let w of item.weather"> {{w.description}}</p>
+            <br />
+        </div> -->
+
+    </mat-card-content>
+
+</mat-card>
