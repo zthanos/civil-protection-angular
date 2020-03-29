@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { MapsComponent } from './maps/maps.component';
 import { EodyComponent } from './eody/eody.component';
 import { TweetsComponent } from './tweets/tweets.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TweetsComponent } from './tweets/tweets.component';
     HomeComponent,
     MapsComponent,
     EodyComponent,
-    TweetsComponent
+    TweetsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

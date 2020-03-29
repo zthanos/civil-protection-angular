@@ -3,6 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { RestApiService } from './services/rest-api.service';
 import { MatTableDataSource } from '@angular/material/table';
 import {MatIconRegistry} from '@angular/material/icon';
+import { RouterOutlet } from '@angular/router';
 
 export interface TableElement {
   id: string;
@@ -32,6 +33,9 @@ export class AppComponent {
       }, 0);
     })
   }
- 
+  
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  }
 
 }

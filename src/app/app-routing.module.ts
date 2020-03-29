@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { MapsComponent } from './maps/maps.component';
 import { EodyComponent } from './eody/eody.component';
 import { TweetsComponent } from './tweets/tweets.component';
+import { ContactsComponent } from './contacts/contacts.component';
+
 
 
 const routes: Routes = [{
@@ -21,6 +23,11 @@ const routes: Routes = [{
 {
   path:'maps',
   component: MapsComponent
+  
+},
+{
+  path:'contacts',
+  component: ContactsComponent
   
 }
 ];
